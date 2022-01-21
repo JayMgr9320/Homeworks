@@ -15,11 +15,12 @@ private int num1, num2, num3, num4;
 		
 	}
 	public void swap2numbersWithTempVar( int num1, int num2) {
+		System.out.println("before swapping Number:" + num1 + "\t" + num2); 
 		int temp = 0; 
 		temp = num1; 
 		num1 = num2; 
 		num2 = temp; 
-		
+		System.out.println("After swapping Number:" + num1 + "\t" + num2); 
 	}
 	public void swap4numbersWithTempVar( int num1, int num2, int num3, int num4) {
 		
@@ -34,6 +35,8 @@ private int num1, num2, num3, num4;
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		SwapNumbers swap = new SwapNumbers (); 
+		swap.swap2numbersWithTempVar(3,5);
 		
 		
 	}
